@@ -1,8 +1,6 @@
 # Tarjeta-presentacion-Digital
 Tarjeta presentacion Digital
 
-Claro, basándome en el código HTML que me proporcionaste, aquí tienes una propuesta para tu archivo `README.md`. Este `README` ayudará a otros a entender de qué trata tu proyecto de tarjeta de perfil.
-
 -----
 
 # Tarjeta de Perfil Profesional
