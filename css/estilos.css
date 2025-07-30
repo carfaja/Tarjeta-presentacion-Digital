@@ -1,0 +1,144 @@
+body {
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.tarjeta {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 350px;
+}
+
+.foto {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.nombre {
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.descripcion {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.habilidades h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.habilidades li {
+  background-color: #e5e7eb;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.contacto a {
+  display: inline-block;
+  background-color: #10b981;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin: 1rem 0;
+  transition: transform 0.3s;
+}
+
+.contacto a:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.enlaces a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.enlaces a:nth-child(2) {
+  background-color: #374151; /* Color gris oscuro para el segundo botón (Portafolio) */
+}
+
+.enlaces a:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  opacity: 0.95;           /* Ligera transparencia para suavizar el efecto */
+}
+
+/* Animación de entrada suave */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tarjeta {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0; /* Se activa con la animación */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .tarjeta {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nombre {
+    font-size: 1.5rem;
+  }
+
+  .descripcion {
+    font-size: 0.9rem;
+  }
+
+  .enlaces {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .enlaces a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .enlaces a:nth-child(2) {
+    background-color: #4B5563; /* Ajuste de color para el segundo botón en móvil */
+  }
+}
